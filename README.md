@@ -1,7 +1,9 @@
 # translate-yaml
+
 Translate yaml files automatically using google translate
 
 ## Usages
+
 Support mutliple languages easily in your app by automatically translating yaml files used for i18n
 
 ## Setup
@@ -21,6 +23,7 @@ This example assumes you have an `intl` folder in the root of your project, whic
 This configuration generated `de.yaml` and `ro.yaml` with translations in German and Romanian.
 
 Features that might be supported in the future:
+
 - Caching to avoid translating same string over and over
 - Manual intervention, you can manually modify a translated string and it will not be overwritten unless the source string changes (currently we override everything during each run)
 
