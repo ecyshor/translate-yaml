@@ -45,7 +45,7 @@ async function translate() {
     console.log(`Writing translated file to ${targetPath}`);
     fs.writeFileSync(targetPath, jsYaml.dump(translated));
   } catch (error) {
-    core.setFailed(error.message);
+    core.failed(error);
   }
 }
 translate();
