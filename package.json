@@ -1,0 +1,16 @@
+{
+  "name": "translate-yaml",
+  "version": "1.0.0",
+  "description": "Translate yaml files using G translate",
+  "main": "index.js",
+  "repository": "https://github.com/ecyshor/translate-yaml.git",
+  "author": "Nicu Reut <contact@nicu.dev>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^4.0.0",
+    "@google-cloud/translate": "^6.2.0",
+    "js-yaml": "^4.1.0"
+  }
+}

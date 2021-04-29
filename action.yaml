@@ -1,0 +1,21 @@
+name: "Translate YAML"
+description: "Translate YAML files using google translate"
+inputs:
+  key:
+    description: "Google Translatio API Key"
+    required: true
+  sourcePath:
+    description: "Path to the yaml file containing translations"
+    required: true
+  sourceLanguage:
+    description: "The language of the source file"
+    required: true
+  targetPath:
+    description: "Where to write the translated yaml file"
+    required: true
+  targetLanguage:
+    description: "The language to translate to"
+    required: true
+runs:
+  using: "node12"
+  main: "dist/index.js"
