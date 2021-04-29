@@ -12,5 +12,11 @@
     "@actions/github": "^4.0.0",
     "@google-cloud/translate": "^6.2.0",
     "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "0.28.4"
+  },
+  "scripts": {
+    "build": "ncc build index.js"
   }
 }
