@@ -4,9 +4,9 @@ Translate yaml files automatically using google translate
 ## Usages
 Support mutliple languages easily in your app by automatically translating yaml files used for i18n
 
-# Setup
+## Setup
 
-## Token setup
+### Token setup
 
 To use the action you need a google api token authorized to use the translation api.
 
@@ -15,7 +15,7 @@ Then you can easily generate a token here `https://console.cloud.google.com/apis
 
 It's recommended to configure the token as a repository secret and not set it up directly in the repo.
 
-## Job setup
+### Job setup
 
 This example assumes you have an `intl` folder in the root of your project, which contains an `en.yaml` file with the strings to be translated.
 This configuration generated `de.yaml` and `ro.yaml` with translations in German and Romanian.
@@ -50,6 +50,6 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "Update translations"
+          git diff-index --quiet HEAD || git commit -m "Update translations"
           git push
 ```

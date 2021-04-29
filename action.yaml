@@ -2,7 +2,7 @@ name: "Translate YAML"
 description: "Translate YAML files using google translate"
 inputs:
   key:
-    description: "Google Translatio API Key"
+    description: "Google Translation API Key"
     required: true
   sourcePath:
     description: "Path to the yaml file containing translations"
