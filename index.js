@@ -14,7 +14,7 @@ async function translate() {
       })
     );
     const sourceLanguage = core.getInput("sourceLanguage");
-    const targetLanguage = core.getInput("targetLangugage");
+    const targetLanguage = core.getInput("targetLanguage");
     console.log(
       `Starting translation for file ${sourcePath} from ${sourceLanguage} to ${targetLanguage}`
     );
