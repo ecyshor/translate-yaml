@@ -1,5 +1,8 @@
 name: "Translate YAML"
 description: "Translate YAML files using google translate"
+branding:
+  icon: "globe"
+  color: "green"
 inputs:
   key:
     description: "Google Translation API Key"

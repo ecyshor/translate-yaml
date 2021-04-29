@@ -8,6 +8,23 @@ Support mutliple languages easily in your app by automatically translating yaml 
 
 ## Setup
 
+### Inputs
+
+
+| Input key      |                                                                                                      Description                                                                                                      |
+| -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| key            |                                                                                               Google Translate API key                                                                                                |
+| sourceLanguage |                                     The language code sent to google translate as the `from` language. This is the language for which the translations string are provided by you                                     |
+| sourcePath     |                                                                    The repository path to the `yaml` file containing your `sourceLanguage` strings                                                                    |
+| targetLanguage |                                                                  The language code to translate to. It will be sent to google as the `to` parameter.                                                                  |
+| targetPath     | The path where to write the newly translated file. It will be overwritten each time. If you want to have some override you can add another file with any overrides you want and merge them as a follow up build step. |
+
+
+### Output
+
+The step will create/update the file at `targetPath` with the translated strings. 
+To have this committed you should add a follow up step which does the commit, as presented in the job example below.
+
 ### Token setup
 
 To use the action you need a google api token authorized to use the translation api.
