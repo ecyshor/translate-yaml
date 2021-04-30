@@ -20,10 +20,11 @@ async function translate() {
     );
     const translate = async (input) => {
       if (typeof input === "string") {
-        return translator.translate(input, {
+        const [translation] = await translator.translate(input, {
           from: sourceLanguage,
           to: targetLanguage,
         });
+        return translation;
       }
       if (typeof input === "object") {
         for (let key of Object.keys(input)) {
